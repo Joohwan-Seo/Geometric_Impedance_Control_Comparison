@@ -1,4 +1,4 @@
-# Geometric-Impedance-Control
+# Geometric-Impedance-Control-Comparison
 Tested in Matlab R2021a and R2021b
 
 Written by Joohwan Seo, Ph.D. Student in Mechanical Engineering, UC Berkeley.
@@ -6,7 +6,8 @@ Written by Joohwan Seo, Ph.D. Student in Mechanical Engineering, UC Berkeley.
 ## Authors' comment
 These are quite raw, unorganized files. I hope everyone can get some of the insights, and please forgive me for the nasty codes.
 
-## Fixes & Update
+## Codes directly implemented from:
+https://github.com/Joohwan-Seo/Geometric-Impedance-Control-Public
 
 ## Main files
 `main_geo_discrete_bullo.m` is a GIC-1 Controller, a Frobenius-norm based, or Lie-group based control design.
@@ -18,9 +19,6 @@ Comparison results on `plotter2.m` are not presented in the paper since the two 
 
 `plotter_geo_comp.m` is for comparison between intuitive geometric impedance control and GIC-v1. When the gains become different, they start to behave differently.\
 When gains are scalar in translational and rotational ways, both controllers are identical.
-
-## Codes directly implemented from:
-https://github.com/Joohwan-Seo/Geometric-Impedance-Control-Public
 
 ## Objectives in Main files
 Change `obj` variable to `tracking`, `tracking2`, `regulation`, and `regulation2`.\
@@ -60,3 +58,19 @@ https://arxiv.org/abs/2401.13190
   journal={arXiv preprint arXiv:2401.13190},\
   year={2024}\
 }
+
+## Original Geometric Impedance Control:
+"Geometric Impedance Control on SE(3) for Robotic Manipulators"
+
+Official Proceedings version: https://doi.org/10.1016/j.ifacol.2023.10.1581
+
+@article{seo2023geometric, title={Geometric impedance control on SE (3) for robotic manipulators}, \
+  author={Seo, Joohwan and Prakash, Nikhil Potu Surya and Rose, Alexander and Choi, Jongeun and Horowitz, Roberto}, \
+  journal={IFAC-PapersOnLine}, \
+  volume={56}, \
+  number={2}, \
+  pages={276--283}, \
+  year={2023}, \
+  publisher={Elsevier} \
+}
+
